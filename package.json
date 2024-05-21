@@ -1,0 +1,13 @@
+{
+  "name": "my-awesome-project",
+  "version": "1.0.0",
+  "description": "A fantastic project that does amazing things",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tailwindcss -i ./public/css/input.css -o ./public/css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
