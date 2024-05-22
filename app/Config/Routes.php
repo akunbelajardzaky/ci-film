@@ -40,6 +40,8 @@ $routes->post('/books/update/(:num)', 'Books::update/$1');
 $routes->delete('/books/delete/(:num)', 'Books::delete/$1');
 $routes->get('/books/detail/(:segment)', 'Books::detail/$1');
 $routes->get('/books/edit/(:segment)', 'Books::edit/$1');
+$routes->get('/detail/(:segment)', 'Film::detail/$1');
+$routes->get('test', 'Test::index');
 
 /*
  * --------------------------------------------------------------------

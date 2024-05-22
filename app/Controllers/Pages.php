@@ -20,6 +20,10 @@ class Pages extends BaseController
         //     'title' => 'About | KMUHI TV'
         // ];
           // $daftar = $this->booksModel->findAll();
+
+          
+
+        //   GOOD
         $daftar = $this->booksModel->getBooks();
         $data = [
             'title' => 'Daftar Buku',

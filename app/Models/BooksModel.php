@@ -49,4 +49,15 @@ class BooksModel extends Model
 
         return $this->where(['slug' => $slug])->first();
     }
+
+    public function search($keyword)
+{
+	if(!$keyword){
+		return null;
+	}
+	$this->db->like('title', $keyword);
+	$this->db->or_like('content', $keyword);
+	$query = $this->db->get($this->_table);
+	return $query->result();
+}
 }
